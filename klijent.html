@@ -1,0 +1,31 @@
+<html>
+<head>
+<script src="DataTables-1.10.4/media/js/jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="DataTables-1.10.4/media/css/jquery.dataTables.min.css" />
+<script src="DataTables-1.10.4/media/js/jquery.dataTables.min.js"></script>
+<script>
+$(document).ready(function(){
+$(".tabela").DataTable({
+"columns": [
+{ "title": "Id" },
+{ "title": "Kod" },
+{ "title": "Drzava" },
+{ "title": "Valuta" },
+{ "title": "Gl. grad" },
+{ "title": "Kontinent" }
+],
+"ajax": "server_obrada.php",
+"processing": true,
+"serverSide": true
+});
+});
+</script>
+</head>
+<body>
+<table class="tabela display" width="100%">
+
+<tbody>
+</tbody>
+</table>
+</body>
+</html>

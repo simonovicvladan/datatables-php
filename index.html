@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="DataTables-1.10.4/media/js/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="DataTables-1.10.4/media/css/jquery.dataTables.min.css" />
+    <script src="DataTables-1.10.4/media/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".tabela").DataTable({
+            "columns": [
+                { "title": "Id" },
+                { "title": "Predmet" },
+                { "title": "Semestar" }
+        ],
+	 "data": [
+		["1","Elektronsko poslovanje","5"],
+		["2","Simulacija i simulacioni jezici", "7"],
+		["3","Internet tehnologije","7"] 
+	 ]
+	}
+);
+        });
+        </script>
+        
+</head>
+<body>
+    <table class="tabela display" width="100%">
+        <thead>
+        <tr>
+        <th>Id</th>
+        <th>Predmet</th>
+        <th>Semestar</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>1</td>
+        <td>Elektronsko poslovanje</td>
+        <td>5</td>
+        </tr>
+        <tr>
+        <td>2</td>
+        <td>Internet tehnologije</td>
+        <td>7</td>
+        </tr>
+        <tr>
+        <td>3</td>
+        <td>Simulacija i simulacioni jezici</td>
+        <td>7</td>
+        </tr>
+        </tbody>
+        </table>
+        
+</body>
+</html>
